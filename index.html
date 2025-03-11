@@ -9,22 +9,24 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
-
+<script type="module" src="https://cdn.jsdelivr.net/gh/domyid/tracker@1.0.2/index.js"></script>
    
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo" onclick="location.href='#home'">Portofolio</div>
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">Profile</a></li>
-              <li><a href="#pendidikan">Pendidikan</a></li>
-              <li><a href="#pengalaman">Pengalaman</a></li>
-              <li><a href="#project">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
+            <nav>
+                <div class="logo" onclick="location.href='#home'">Portofolio</div>
+                <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Profile</a></li>
+                    <li><a href="#pendidikan">Pendidikan</a></li>
+                    <li><a href="#pengalaman">Pengalaman</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
     </header>
     <main id="home">
             <section class="home" >
@@ -138,4 +140,10 @@
         <p>© 2024 Portfolio Mohammad isa. All rights reserved.</p>
       </footer>
 </body>
+
+<script>
+    function toggleMenu() {
+  document.querySelector(".nav-links").classList.toggle("show");
+}
+</script>
 </html>

@@ -72,11 +72,12 @@ nav ul li a:hover::after {
 #home {
   padding-top: 150px; 
   margin-top: -70px;
+  justify-content: center;
   
 }
 .home {
   padding-top: 200px;
-  width: 1000px;
+  width: 900px;
 }
 .homeme {
   padding-top: 150px;
@@ -226,7 +227,7 @@ footer {
 
 .slider {
   padding-top: 150px;
-  width: 1000px;
+  width: 900px;
   overflow: hidden;
   border-radius: 5px;
 }
@@ -270,4 +271,60 @@ footer {
 }
 .coding img:hover {
   transform: scale(1.2); 
+}
+
+
+/* hamburger */
+
+/* Styling untuk hamburger menu */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+  color: white;
+}
+
+/* Style navigasi untuk layar besar */
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  position: relative;
+}
+
+/* Responsif: Ubah menjadi menu hamburger */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 100%;
+    background: #351f39;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
 }
