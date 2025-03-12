@@ -165,13 +165,29 @@ section dl p:hover {
 .about,
 .pendidikan,
 .pengalaman {
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 70px 50px 50px 50px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 70px 50px 50px 50px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+    opacity: 0;
+    transform: translateX(-100px); /* Mulai dari luar layar kiri */
+    background: white;
 }
+
+.show {
+    opacity: 1;
+    transform: translateX(0); /* Bergerak ke posisi normal */
+}
+
+/* Tambahkan latar belakang agar terlihat jelas */
+/* .about { background: #ffdddd; }
+.pendidikan { background: #ddffdd; }
+.pengalaman { background: #ddddff; } */
+
+/* end */
+
 .contact {
   max-width: 600px;
   margin: 50px auto;

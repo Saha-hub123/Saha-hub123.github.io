@@ -155,5 +155,21 @@
     function toggleMenu() {
   document.querySelector(".nav-links").classList.toggle("show");
 }
+
+// conten slider
+        // Menggunakan Intersection Observer API agar animasi berulang saat scroll naik-turun
+        const elements = document.querySelectorAll('.about, .pendidikan, .pengalaman');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show'); // Tambahkan animasi saat elemen terlihat
+                } else {
+                    entry.target.classList.remove('show'); // Hapus animasi saat elemen keluar layar
+                }
+            });
+        }, { threshold: 0.2 }); // Aktifkan animasi saat 20% elemen terlihat
+
+        elements.forEach(el => observer.observe(el));
 </script>
 </html>
