@@ -220,14 +220,16 @@ footer {
 
 
 .project {
-  width:600px;
+  width:500px;
   padding-top: 150px;
   margin: 10px 0;
+  margin-left: 10px;
 }
 
 .slider {
   padding-top: 150px;
   width: 900px;
+  height: 600px;
   overflow: hidden;
   border-radius: 5px;
 }
@@ -250,10 +252,15 @@ footer {
 }
 @keyframes slide {
   0% { transform: translateX(0); }
-  33% { transform: translateX(-100%); }
-  66% { transform: translateX(-200%); }
-  100% { transform: translateX(-300%); }
+  14% { transform: translateX(-100%); }
+  28% { transform: translateX(-200%); }
+  42% { transform: translateX(-300%); }
+  57% { transform: translateX(-400%); }
+  71% { transform: translateX(-500%); }
+  85% { transform: translateX(-600%); }
+  100% { transform: translateX(-600%); } /* Tetap di slide terakhir (clone) */
 }
+
 .coding {
   margin-top: 20px;
 }
