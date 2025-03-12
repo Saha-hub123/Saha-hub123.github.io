@@ -235,7 +235,7 @@ footer {
 }
 .slides {
   display: flex;
-  animation: slide 9s infinite;
+  animation: slide 21s infinite;
   width: 100%;
   height: 100%;
 }
@@ -252,12 +252,12 @@ footer {
 }
 @keyframes slide {
   0% { transform: translateX(0); }
-  14% { transform: translateX(-100%); }
-  28% { transform: translateX(-200%); }
-  42% { transform: translateX(-300%); }
-  57% { transform: translateX(-400%); }
-  71% { transform: translateX(-500%); }
-  85% { transform: translateX(-600%); }
+  14.28% { transform: translateX(-100%); }
+  28.56% { transform: translateX(-200%); }
+  42.84% { transform: translateX(-300%); }
+  57.12% { transform: translateX(-400%); }
+  71.4% { transform: translateX(-500%); }
+  85.68% { transform: translateX(-600%); }
   100% { transform: translateX(-600%); } /* Tetap di slide terakhir (clone) */
 }
 
