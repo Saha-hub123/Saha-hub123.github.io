@@ -90,6 +90,9 @@ nav ul li a:hover::after {
 }
 .homeme {
   padding-top: 150px;
+  transform: translateX(100px);
+  opacity: 0;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 main {
@@ -107,6 +110,7 @@ main {
   border: 6px solid #351f39;
   border-radius: 50%;
   transition: transform 0.3s;
+
 }
 .me img:hover {
   transform: scale(1.1);
