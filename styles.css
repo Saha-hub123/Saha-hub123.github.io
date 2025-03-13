@@ -179,6 +179,7 @@ section dl p:hover {
 .about,
 .pendidikan,
 .pengalaman {
+  font-family: "Arima", system-ui;
     max-width: 800px;
     margin: 50px auto;
     padding: 50px 50px 50px 50px;
