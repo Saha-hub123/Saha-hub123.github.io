@@ -262,5 +262,31 @@
 
         proelements.forEach(el => observer.observe(el));
         projectItems.forEach(el => observer.observe(el));
+
+// home
+
+document.addEventListener("DOMContentLoaded", function () {
+    const animatedElements = document.querySelectorAll(".home, .me.homeme");
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                    entry.target.classList.remove("hidden");
+                } else {
+                    entry.target.classList.remove("show");
+                    entry.target.classList.add("hidden");
+                }
+            });
+        },
+        { threshold: 0.2 } // Elemen muncul saat 20% bagian terlihat
+    );
+
+    animatedElements.forEach((element) => {
+        observer.observe(element);
+    });
+});
+
 </script>
 </html>
