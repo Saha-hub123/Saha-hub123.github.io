@@ -143,6 +143,7 @@ main button:hover {
 section {
   
   padding-top: 2rem ;
+  padding-bottom: 2rem ;
   text-align: center;
   font-size: large;
 }
@@ -174,13 +175,12 @@ section dl p:hover {
 .pengalaman {
     max-width: 800px;
     margin: 50px auto;
-    padding: 70px 50px 50px 50px;
+    padding: 50px 50px 50px 50px;
     border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.6s ease-out, opacity 0.6s ease-out;
     opacity: 0;
     transform: translateX(-100px); /* Mulai dari luar layar kiri */
-    background: white;
 }
 
 .show {
@@ -207,7 +207,7 @@ section dl p:hover {
 .pendidikan:hover,
 .pengalaman:hover,
 .contact:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
   transform: scale(1.05);
 }
 
