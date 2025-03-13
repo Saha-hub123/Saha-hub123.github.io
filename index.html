@@ -171,5 +171,13 @@
         }, { threshold: 0.2 }); // Aktifkan animasi saat 20% elemen terlihat
 
         elements.forEach(el => observer.observe(el));
+
+// slider projek
+        // Menggunakan Intersection Observer API agar animasi berulang saat scroll naik-turun
+        const proelements = document.querySelectorAll('.project, .slider');
+        const projectItems = document.querySelectorAll('.project h2, .project dl dd');
+
+        proelements.forEach(el => observer.observe(el));
+        projectItems.forEach(el => observer.observe(el));
 </script>
 </html>
