@@ -92,7 +92,7 @@ nav ul li a:hover::after {
   
 }
 .home {
-  padding-top: 130px;
+  padding-top: 150px;
   width: 900px;
   opacity: 0;
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
